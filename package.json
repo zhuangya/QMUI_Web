@@ -31,7 +31,8 @@
     "js-md5": "^0.4.1",
     "mkdirp": "^0.5.1",
     "path": "^0.12.7",
-    "yargs": "^6.0.0"
+    "yargs": "^6.0.0",
+    "snyk": "^1.88.2"
   },
   "devDependencies": {
     "lodash": "^4.16.2",
@@ -45,5 +46,10 @@
   "bugs": {
     "url": "https://github.com/QMUI/QMUI_Web/issues"
   },
-  "homepage": "http://qmuiteam.com/web/"
+  "homepage": "http://qmuiteam.com/web/",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
